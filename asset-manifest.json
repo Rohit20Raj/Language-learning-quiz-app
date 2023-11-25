@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Language-learning-quiz-app/static/css/main.490a27cb.css",
+    "main.js": "/Language-learning-quiz-app/static/js/main.a11817e9.js",
+    "static/media/logo.png": "/Language-learning-quiz-app/static/media/logo.980c7144148284402d5e.png",
+    "static/media/P.png": "/Language-learning-quiz-app/static/media/P.ebbf264bb46b41e3f8b6.png",
+    "index.html": "/Language-learning-quiz-app/index.html",
+    "main.490a27cb.css.map": "/Language-learning-quiz-app/static/css/main.490a27cb.css.map",
+    "main.a11817e9.js.map": "/Language-learning-quiz-app/static/js/main.a11817e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.490a27cb.css",
+    "static/js/main.a11817e9.js"
+  ]
+}
