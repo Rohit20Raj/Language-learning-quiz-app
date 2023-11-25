@@ -3,7 +3,8 @@ import End from './components/End';
 import Quiz from './components/Quiz';
 import Start from './components/Start';
 import { QuizContext } from './helper/Context';
-import image from './components/images/OIG-removebg-preview.png';
+import image from './components/images/P.png';
+import logo from './components/images/logo.png';
 
 function App() {
   const [gameState, setGameState] = useState("start");
@@ -28,8 +29,9 @@ function App() {
     <div>
       <div className="navbar mx-2">
         <h1 className="heading">
-          <img className='logo' src={image} alt='Q' onClick={() => setGameState("start")} />
-          <span className={theme==="dark" && "text-light"}>UIZZER</span>
+          <img className='logo' src={image} alt='P' onClick={() => setGameState("start")} />
+          <span className={theme==="dark" && "text-light"}>olyLingo</span>
+          <img className='logo' src={logo} alt='P' onClick={() => setGameState("start")} />
         </h1>
         <button className={"theme btn btn-" + (theme === "dark" ? "light" : "secondary")} onClick={toggleTheme}>
           {theme === "light" ? <span>Dark</span> : <span>Light</span>}

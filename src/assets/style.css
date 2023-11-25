@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 .navbar{
   display: flex;
@@ -26,12 +27,22 @@ body{
 .start>.card{
   margin: 0;
   width: 45vw;
+  transition: all 1s ease-in-out; /* Added transition here */
+}
+
+.start>.card:hover{
+  margin-top: 1vw;
+  transform: scale(1.5) translateY(20px); /* Corrected property name from 'scale' to 'transform' */
+  z-index:1;
+  box-shadow: 0 0 250px;
+  transition: all 0.5s ease-in-out; /* Added transition here */
+  backdrop-filter: blur(100vw);
 }
 .start{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -78,7 +89,7 @@ body{
 }
 @media (orientation: landscape) {
   .card{
-    width: 80vw;
+    width: 50vw;
   }
   .flex{
     display: flex;

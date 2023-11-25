@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { avengers, loki, pokemon } from '../quizQuestions'
+import { english, hindi, gujrati, marathi, telugu, french, german } from '../quizQuestions'
 import { QuizContext } from '../helper/Context';
 import Correct from './Correct';
 import Wrong from './Wrong';
@@ -10,7 +10,7 @@ function Quiz() {
   const [choosenAnswer, setChoosenAnswer] = useState("");
   const { quizName, setGameState, score, setScore, theme } = useContext(QuizContext);
   const [flag, setFlag] = useState(false);
-  const quizzes = { avengers, loki, pokemon };
+  const quizzes = { english, hindi, gujrati, marathi, telugu, french, german };
   const Questions = quizzes[quizName];
 
   const handleAnswer = (answer) => {
@@ -37,9 +37,9 @@ function Quiz() {
       <div className={"card quiz mt-1 container " + (theme === "dark" && "bg-dark text-light")}>
         <div className="questionNo">{question + 1} of {Questions.length}</div>
         <div className="card-body flex">
-          <div className="image">
+          {/* <div className="image">
             <img className='ques-img' src={Questions[question].img} alt="Question image" />
-          </div>
+          </div> */}
           <div className="question">
             <h5 className="card-title questions">
               {Questions[question].prompt}
